@@ -1,10 +1,10 @@
-let x = 0;
-let y = 0;
-let cont = 0;
-let carril = 3;
-let imagen;
-let window_height = window.innerWidth*0.98;
-let posJeringas = [];
+var x = 0;
+var y = 0;
+var cont = 0;
+var carril = 3;
+var imagen;
+var window_height = window.innerWidth*0.98;
+var posJeringas = [];
 function mover(event) {
     imagen = document.getElementById("img-gondola");
     if (event.keyCode == "39") {
@@ -65,7 +65,6 @@ function mover(event) {
       return 1;
     }
     let new_j = getRandomArbitrary(0, 4);
-    console.log(new_j);
     for(var z = 0; z < new_j; z++){
       addJeringa();
     }
@@ -74,9 +73,7 @@ function mover(event) {
 
   function addJeringa(){
     let arbitraryCarril= getRandomArbitrary(1, 6);
-    let ArbitraryX =  getRandomArbitrary((x/100)+1, 11)*100;
-    console.log(x)
-    console.log(ArbitraryX);
+    let ArbitraryX =  getRandomArbitrary((x/100)+1, (window_height-100)/100)*100;
     if(ArbitraryX != -100){
       posJeringas.push([arbitraryCarril,ArbitraryX]);
       let miImagen = document.createElement("img");
