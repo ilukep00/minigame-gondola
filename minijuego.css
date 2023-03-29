@@ -113,6 +113,35 @@
   }
   #cont{
     position:absolute;
-    left:90%;
-    top: 40px;
+    left:85%;
+    top: 80px;
+    font-family: 
+    'Quicksand', sans-serif;
+    font-size: 1em;
+    border:2px solid rgba(0,0,0,0.2);
+    border-radius: 12px;
+    padding: 7px 10px;
+    background: rgb(37, 179, 37);
+    color: black;
+  }
+  #modo{
+    position:absolute;
+    left:85%;
+    top: 20px;
+    font-family: 
+    'Quicksand', sans-serif;
+    font-size: 1em;
+  }
+  #modo select{
+    width: 100px;
+    cursor: pointer;
+    padding: 7px 10px;
+    height: 42px;
+    background: #f0f0f0;
+    color: #7b7b7b;
+    font-family: 
+    'Quicksand', sans-serif;
+    font-size: 1em;
+    border:2px solid rgba(0,0,0,0.2);
+    border-radius: 12px;
   }

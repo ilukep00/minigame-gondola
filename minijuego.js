@@ -5,6 +5,7 @@ var carril = 3;
 var imagen;
 var window_height = window.innerWidth*0.98;
 var posJeringas = [];
+var mode;
 function mover(event) {
     imagen = document.getElementById("img-gondola");
     if (event.keyCode == "39") {
@@ -73,8 +74,13 @@ function mover(event) {
 
   function addJeringa(){
     let arbitraryCarril= getRandomArbitrary(1, 6);
-    let ArbitraryX =  getRandomArbitrary((x/100)+1, (window_height-100)/100)*100;
-    if(ArbitraryX != -100){
+    let ArbitraryX;
+    if(mode == "Easy"){
+       ArbitraryX =  getRandomArbitrary(0, (window_height-100)/100)*100;
+    }else{
+       ArbitraryX =  getRandomArbitrary((x/100)+1, (window_height-100)/100)*100;
+    }
+    if(ArbitraryX != -100 && ArbitraryX != x){
       posJeringas.push([arbitraryCarril,ArbitraryX]);
       let miImagen = document.createElement("img");
       miImagen.src = "jeringa.png";
@@ -90,4 +96,20 @@ function mover(event) {
       return Math.floor(Math.random() * (max - min) + min);
     else
       return -1;
+  }
+
+  function insertMode(){
+    if(x > 0){
+      alert("You cannot change the mode, when the game is started");
+      if(document.getElementById("select-modo").value == "Easy"){
+        document.getElementById("select-modo").value = "Difficult";
+      }else{
+        document.getElementById("select-modo").value = "Easy";
+      }
+    }
+    else{
+      mode = document.getElementById("select-modo").value;
+      alert("MODE SELECTED: "+mode);
+    }
+    
   }
