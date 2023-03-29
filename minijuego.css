@@ -11,7 +11,7 @@
     width: 98%;
     height: 226px;
     position:absolute;
-    bottom:195px;
+    top:205px;
 }
 
 .casa{
@@ -21,19 +21,19 @@
 #ciudad #casa-1{
     background-color:SandyBrown ;
     position:absolute;
-    bottom:460px;
+    top:80px;
     left:10%;
 }
 #ciudad #casa-2{
     background-color:SandyBrown ;
     position:absolute;
-    bottom:460px;
+    top:80px;
     left:40%;
 }
 #ciudad #casa-3{
     background-color:SandyBrown ;
     position:absolute;
-    bottom:460px;
+    top:80px;
     left:70%;
 }
 .tejado{
@@ -46,18 +46,18 @@
  }
  #ciudad #tejado-1{
     position:absolute;
-    bottom:560px;
+    top:0px;
     left:9%;
  }
 
  #ciudad #tejado-2{
     position:absolute;
-    bottom:560px;
+    top:0px;
     left:39%;
  }
  #ciudad #tejado-3{
     position:absolute;
-    bottom:560px;
+    top:0px;
     left:69%;
  }
  .ventana-1{
@@ -87,7 +87,7 @@
   #acera{
     background-color: grey;
     position:absolute;
-    bottom:425px;
+    top:180px;
     height: 30px;
     width:98%;
     border-bottom: 5px solid black; 
@@ -95,7 +95,7 @@
   #bordillo{
     background-color: B2503A;
     position:absolute;
-    bottom:405px;
+    top:200px;
     height: 20px;
     width:98%;
  
