@@ -1,3 +1,6 @@
+body{
+  background-color: #00AAE4;
+}
 .carril-impar{
     background-color:darkblue;
     height: 80px;
@@ -6,35 +9,9 @@
     background-color: blue;
     height: 90px;
 }
-
-#rio{
-    width: 98%;
-    height: 226px;
-    position:absolute;
-    top:205px;
-}
-
 .casa{
     width:150px;
     height:100px;
-}
-#ciudad #casa-1{
-    background-color:SandyBrown ;
-    position:absolute;
-    top:80px;
-    left:10%;
-}
-#ciudad #casa-2{
-    background-color:SandyBrown ;
-    position:absolute;
-    top:80px;
-    left:40%;
-}
-#ciudad #casa-3{
-    background-color:SandyBrown ;
-    position:absolute;
-    top:80px;
-    left:70%;
 }
 .tejado{
    width:95px;
@@ -43,22 +20,6 @@
    border-right: 40px solid transparent;
    border-bottom: 65px solid green;
 
- }
- #ciudad #tejado-1{
-    position:absolute;
-    top:0px;
-    left:9%;
- }
-
- #ciudad #tejado-2{
-    position:absolute;
-    top:0px;
-    left:39%;
- }
- #ciudad #tejado-3{
-    position:absolute;
-    top:0px;
-    left:69%;
  }
  .ventana-1{
     width:40px;
@@ -83,22 +44,6 @@
     position:absolute;
     bottom:0;
     left:38%;
-  }
-  #acera{
-    background-color: grey;
-    position:absolute;
-    top:180px;
-    height: 30px;
-    width:98%;
-    border-bottom: 5px solid black; 
-  }
-  #bordillo{
-    background-color: B2503A;
-    position:absolute;
-    top:200px;
-    height: 20px;
-    width:98%;
- 
   }
   #img-gondola{
     width:80px;
@@ -145,3 +90,120 @@
     border:2px solid rgba(0,0,0,0.2);
     border-radius: 12px;
   }
+
+@media only screen and (max-height: 653px) {
+  #rio{
+    width: 98%;
+    height: 226px;
+    position:absolute;
+    top:205px;
+  }
+  #ciudad #casa-1{
+    background-color:SandyBrown ;
+    position:absolute;
+    top:80px;
+    left:10%;
+  }
+  #ciudad #casa-2{
+    background-color:SandyBrown ;
+    position:absolute;
+    top:80px;
+    left:40%;
+  }
+  #ciudad #casa-3{
+    background-color:SandyBrown ;
+    position:absolute;
+    top:80px;
+    left:70%;
+  }
+  #ciudad #tejado-1{
+    position:absolute;
+    top:0px;
+    left:9%;
+  }
+  #ciudad #tejado-2{
+    position:absolute;
+    top:0px;
+    left:39%;
+  }
+  #ciudad #tejado-3{
+    position:absolute;
+    top:0px;
+    left:69%;
+  }
+  #acera{
+    background-color: grey;
+    position:absolute;
+    top:180px;
+    height: 30px;
+    width:98%;
+    border-bottom: 5px solid black; 
+  }
+  #bordillo{
+    background-color: B2503A;
+    position:absolute;
+    top:200px;
+    height: 20px;
+    width:98%;
+ 
+  }
+}
+
+
+@media only screen and (min-height: 654px) {
+  #rio{
+    width: 98%;
+    height: 226px;
+    position:absolute;
+    bottom:195px;
+  }
+  #ciudad #casa-1{
+    background-color:SandyBrown ;
+    position:absolute;
+    bottom:460px;
+    left:10%;
+  }
+  #ciudad #casa-2{
+    background-color:SandyBrown ;
+    position:absolute;
+    bottom:460px;
+    left:40%;
+  }
+  #ciudad #casa-3{
+    background-color:SandyBrown ;
+    position:absolute;
+    bottom:460px;
+    left:70%;
+  }
+  #ciudad #tejado-1{
+    position:absolute;
+    bottom:560px;
+    left:9%;
+  }
+  #ciudad #tejado-2{
+    position:absolute;
+    bottom:560px;
+    left:39%;
+  }
+  #ciudad #tejado-3{
+    position:absolute;
+    bottom:560px;
+    left:69%;
+  }
+  #acera{
+    background-color: grey;
+    position:absolute;
+    bottom:425px;
+    height: 30px;
+    width:98%;
+    border-bottom: 5px solid black; 
+  }
+  #bordillo{
+    background-color: B2503A;
+    position:absolute;
+    bottom:405px;
+    height: 20px;
+    width:98%;
+ 
+  }
+}
